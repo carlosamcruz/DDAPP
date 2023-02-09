@@ -3878,6 +3878,10 @@ public class BsvTxOperations {
                 H4 = SHA256G.SHA256bytes(SHA256G.HashStrToByte2(H4));
                 repeatFlag = true;
             }
+
+            if(Variables.kTEST.compareTo(BigInteger.valueOf(0)) != 0)
+                repeatFlag = false;
+
         }
 
         /////////////////////////////////////////////////////////////////////////////////////
